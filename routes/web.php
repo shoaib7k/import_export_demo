@@ -22,6 +22,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('csv_file', 'CsvFile@index');
 
-Route::get('csv_file/export', 'CsvFile@csv_export')->name('export');
+Route::get('csv_file/export', 'CsvFile@csv_export')->name('export1');
 
 Route::post('csv_file/import', 'CsvFile@csv_import')->name('import');
