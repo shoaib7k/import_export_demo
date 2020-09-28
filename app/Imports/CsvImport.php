@@ -4,8 +4,9 @@ namespace App\Imports;
 
 use App\User;
 use Maatwebsite\Excel\Concerns\ToModel;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class CsvImport implements ToModel
+class CsvImport implements ToModel, WithHeadingRow
 {
     /**
     * @param array $row

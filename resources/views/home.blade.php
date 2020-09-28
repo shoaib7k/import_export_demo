@@ -15,6 +15,8 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <br>
+                <a href="<?= url('csv_file'); ?>">Click Here to Export CSV File</a>
                 </div>
             </div>
         </div>
