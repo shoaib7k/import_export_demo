@@ -25,3 +25,6 @@ Route::get('csv_file', 'CsvFile@index');
 Route::get('csv_file/export', 'CsvFile@csv_export')->name('export');
 
 Route::post('csv_file/import', 'CsvFile@csv_import')->name('import');
+Route::get('csv_file/{id}/edit','CsvFile@edit');
+
+Route::resource('products','ProductController');

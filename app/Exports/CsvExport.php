@@ -2,7 +2,7 @@
 
 namespace App\Exports;
 
-use App\User;
+use App\Products;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class CsvExport implements FromCollection
@@ -12,6 +12,6 @@ class CsvExport implements FromCollection
     */
     public function collection()
     {
-        return User::all();
+        return Products::all();
     }
 }

@@ -16,7 +16,9 @@
 
                     {{ __('You are logged in!') }}
                     <br>
-                <a href="<?= url('csv_file'); ?>">Click Here to Export CSV File</a>
+                <a href="<?= url('csv_file'); ?>">Click Here to Export/Import bulk list of products in CSV File</a>
+                <br>
+                <a href="<?= url('products'); ?>">Click Here to see product list in table</a>
                 </div>
             </div>
         </div>
